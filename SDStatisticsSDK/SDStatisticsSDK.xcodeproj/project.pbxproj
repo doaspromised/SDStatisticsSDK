@@ -11,6 +11,8 @@
 		F126586D25E4F088004517D6 /* SDStatisticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F126586C25E4F088004517D6 /* SDStatisticsSDKTests.m */; };
 		F126586F25E4F088004517D6 /* SDStatisticsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F126586125E4F088004517D6 /* SDStatisticsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F12658CB25E4F29F004517D6 /* SDStatisticsSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = F12658CA25E4F29F004517D6 /* SDStatisticsSDK.m */; };
+		F12658D225E4F486004517D6 /* SDExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = F12658D025E4F486004517D6 /* SDExceptionHandler.h */; };
+		F12658D325E4F486004517D6 /* SDExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F12658D125E4F486004517D6 /* SDExceptionHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		F126586C25E4F088004517D6 /* SDStatisticsSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDStatisticsSDKTests.m; sourceTree = "<group>"; };
 		F126586E25E4F088004517D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12658CA25E4F29F004517D6 /* SDStatisticsSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDStatisticsSDK.m; sourceTree = "<group>"; };
+		F12658D025E4F486004517D6 /* SDExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDExceptionHandler.h; sourceTree = "<group>"; };
+		F12658D125E4F486004517D6 /* SDExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDExceptionHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 			children = (
 				F126586125E4F088004517D6 /* SDStatisticsSDK.h */,
 				F12658CA25E4F29F004517D6 /* SDStatisticsSDK.m */,
+				F12658D025E4F486004517D6 /* SDExceptionHandler.h */,
+				F12658D125E4F486004517D6 /* SDExceptionHandler.m */,
 				F126586225E4F088004517D6 /* Info.plist */,
 			);
 			path = SDStatisticsSDK;
@@ -96,6 +102,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12658D225E4F486004517D6 /* SDExceptionHandler.h in Headers */,
 				F126586F25E4F088004517D6 /* SDStatisticsSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F12658CB25E4F29F004517D6 /* SDStatisticsSDK.m in Sources */,
+				F12658D325E4F486004517D6 /* SDExceptionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

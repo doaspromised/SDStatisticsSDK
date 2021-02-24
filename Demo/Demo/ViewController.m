@@ -6,12 +6,28 @@
 //
 
 #import "ViewController.h"
+#import "SDMockSignalCrash.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+- (IBAction)btnAction:(id)sender {
+    
+//    @try {
+//        NSArray *array = @[@1, @2];
+//        NSLog(@"%@", array[2]);
+//    } @catch (NSException *exception) {
+//        NSLog(@"%@", exception.name);
+//    } @finally {
+//        NSLog(@"33");
+//    }
+    SDMockSignalCrash *sc = [SDMockSignalCrash new];
+    [sc signalCarsh];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

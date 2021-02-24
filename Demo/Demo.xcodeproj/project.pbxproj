@@ -18,6 +18,7 @@
 		F12658B025E4F164004517D6 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F12658AF25E4F164004517D6 /* DemoUITests.m */; };
 		F12658C525E4F22D004517D6 /* SDStatisticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12658C425E4F22D004517D6 /* SDStatisticsSDK.framework */; };
 		F12658C625E4F22D004517D6 /* SDStatisticsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12658C425E4F22D004517D6 /* SDStatisticsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1CF7FD025E632C40083575A /* SDMockSignalCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CF7FCF25E632C40083575A /* SDMockSignalCrash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		F12658AF25E4F164004517D6 /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		F12658B125E4F164004517D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12658C425E4F22D004517D6 /* SDStatisticsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDStatisticsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CF7FCE25E632C40083575A /* SDMockSignalCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMockSignalCrash.h; sourceTree = "<group>"; };
+		F1CF7FCF25E632C40083575A /* SDMockSignalCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDMockSignalCrash.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				F126588C25E4F162004517D6 /* SceneDelegate.m */,
 				F126588E25E4F162004517D6 /* ViewController.h */,
 				F126588F25E4F162004517D6 /* ViewController.m */,
+				F1CF7FCE25E632C40083575A /* SDMockSignalCrash.h */,
+				F1CF7FCF25E632C40083575A /* SDMockSignalCrash.m */,
 				F126589125E4F162004517D6 /* Main.storyboard */,
 				F126589425E4F164004517D6 /* Assets.xcassets */,
 				F126589625E4F164004517D6 /* LaunchScreen.storyboard */,
@@ -297,6 +302,7 @@
 				F126589025E4F162004517D6 /* ViewController.m in Sources */,
 				F126588A25E4F162004517D6 /* AppDelegate.m in Sources */,
 				F126589B25E4F164004517D6 /* main.m in Sources */,
+				F1CF7FD025E632C40083575A /* SDMockSignalCrash.m in Sources */,
 				F126588D25E4F162004517D6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

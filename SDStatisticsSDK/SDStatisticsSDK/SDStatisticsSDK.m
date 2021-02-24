@@ -6,7 +6,7 @@
 //
 
 #import "SDStatisticsSDK.h"
-
+#import "SDExceptionHandler.h"
 @implementation SDStatisticsSDK
 
 + (instancetype)sharedInstance {
@@ -17,4 +17,14 @@
     });
     return instance;
 }
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [SDExceptionHandler sharedInstance];
+    }
+    return self;
+}
+
 @end
