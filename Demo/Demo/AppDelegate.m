@@ -17,6 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [SDStatisticsSDK sharedInstance];
+    [[SDStatisticsSDK sharedInstance] track:@"MyFirstEvent" properties:@{ @"testKey": @"testValue" }];
     return YES;
 }
 

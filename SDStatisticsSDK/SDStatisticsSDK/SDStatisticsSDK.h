@@ -22,6 +22,18 @@ FOUNDATION_EXPORT const unsigned char SDStatisticsSDKVersionString[];
  
  @return 返回单例
  */
-+ (instancetype)sharedInstance;
++ (instancetype _Nonnull )sharedInstance;
+
+@end
+
+
+//MARK: - Track
+@interface SDStatisticsSDK (Track)
+
+
+/// 调用Track接口, 触发事件
+/// @param eventName 事件名称
+/// @param properties 事件属性
+- (void)track:(NSString *_Nonnull)eventName properties:(nullable NSDictionary<NSString *, id> *)properties;
 
 @end
