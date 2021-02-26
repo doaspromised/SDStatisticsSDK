@@ -16,6 +16,8 @@
 
 - (IBAction)btnAction:(id)sender {
     
+    NSArray *array = @[@1, @2];
+    NSLog(@"%@", array[2]);
 //    @try {
 //        NSArray *array = @[@1, @2];
 //        NSLog(@"%@", array[2]);
@@ -24,8 +26,8 @@
 //    } @finally {
 //        NSLog(@"33");
 //    }
-    SDMockSignalCrash *sc = [SDMockSignalCrash new];
-    [sc signalCarsh];
+//    SDMockSignalCrash *sc = [SDMockSignalCrash new];
+//    [sc signalCarsh];
     
 }
 

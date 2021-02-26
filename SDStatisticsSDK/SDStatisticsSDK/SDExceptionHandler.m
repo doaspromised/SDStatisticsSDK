@@ -6,6 +6,7 @@
 //
 
 #import "SDExceptionHandler.h"
+#import "SDStatisticsSDK.h"
 
 static NSString *const SDSignalExceptionHanlderName = @"SignalExceptionHanlder";
 static NSString *const SDSignalExceptionHandlerUserInfo = @"SignalExceptionHandlerUserInfo";
@@ -77,7 +78,7 @@ static void sdstatistics_signal_exception_handler(int sig, struct __siginfo *inf
 }
 
 - (void)trackAppCrashedWithException:(NSException *)exception {
-//    NSMutableDictionary *properties = [NSMutableDictionary dictionary];
+    NSMutableDictionary *properties = [NSMutableDictionary dictionary];
     // 异常名称
     NSString *name = [exception name];
     // 异常出现的原因
@@ -86,7 +87,8 @@ static void sdstatistics_signal_exception_handler(int sig, struct __siginfo *inf
     NSArray *stacks = [exception callStackSymbols] ?: [NSThread callStackSymbols];
     // 将信息组装
     NSString *exceptionInfo = [[NSString alloc] initWithFormat:@"Exception name: %@\nException reason: %@\nException stack: %@\n", name, reason, stacks];
-    
-    NSLog(@"\nexceptionInfo: %@\n", exceptionInfo);
+    properties[@"$app_creashed_reason"] = exceptionInfo;
+    [[SDStatisticsSDK sharedInstance] track:@"$AppCrashed" properties:properties.copy];
+    NSSetUncaughtExceptionHandler(NULL);
 }
 @end
